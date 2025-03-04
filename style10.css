@@ -1,8 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-..djhsjdcbsks
-xkdndms
-d
-dkdmd
-s
-dmdmd
-dmdmdmd
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color,background;
+}
+header .menu a:hover{
+  background-color:#fff;
+}
+header .btn{
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+/*container*/
+
+.container{
+  width: 100%;
+  height: 90vh;
+  background: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.container .txt h3{
+  font-size: 3vmin;
+  letter-spacing: 2px;
+ padding-bottom: 20px;
+ text-transform: uppercase;
+}
+.container .txt h1{
+  font-size: 9vmin;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+.container .txt p{
+  font-size: 3vmin;
+  padding-bottom: 40px;
+}
+.container .txt a{
+  font-size: 2.5vmin;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 20px 30px;
+  background-color:#f18c8e;
+  border-right: 50px;
+}
+.container .img{
+  width: 100%;
+}
+container img{
+  width: 750px;
+}
+
+/*about*/
+
+.about{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.about .img-sec img{
+  width: 500px;
+}
+.about .text-sec{
+  padding: 50pxx;
+}
+.about .text-sec h3{
+  font-size: 2.6vmin;
+  letter-spacing: 2px;
+  color: #f18c8e;
+  text-transform: uppercase;
+}
+.about .text-sec h1{
+  font-size: 5vmin;
+  padding: 20px 0;
+}
+.about .text-sec p{
+  font-size: 3vmin;
+  letter-spacing:1px;
+  color: #9a9a9a;
+}
+
+/*four column*/
+
+.main-col{
+  width:100%;
+  background:#dbd8da;
+}
+.main-col .col{
+  width: 800%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-col .col h1{
+  font-size: 3.5vmin;
+  padding-bottom:20px;
+}
+.main-col .col p{
+  font-size: 3vmin;
+  color:#000;
+}
+.main-col .col p:hover{
+  color:#e2dcdc;
+}
+.main-col .col .one,
+.main-col .col .two,
+.main-col .col .three,
+.main-col .col .four{
+ width: 100%;
+ height: 40vh;
+ padding:20px;
+}
+.main-col .col .one:hover,
+.main-col .col .two:hover,
+.main-col .col .three:hover,
+.main-col .col .four:hover{
+ background-color: #f18c8e;
+ transition: 0.5s ease-in;
+}
+.main-col .col .three{
+  background-color:#f18c8e;
+}
+
+/*Priceing*/
+.pricing{
+  width: 100%;
+  height: 90vh;
+  padding: 50px;
+}
+.pricing .only-text{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  text-align: center;
+  padding:20px;
+}
+.pricing .only-text h3{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color:#f18c8e;
+}
+.pricing .only-text h1{
+  font-size: 1.2rem;
+  color: #9a9a9a;
+}
+.pricing .pricing-sec{
+  width:100%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pricing .pricing-sec .one,
+.pricing .pricing-sec .two,
+.pricing .pricing-sec .three,
+.pricing .pricing-sec .four{
+  width:100%;
+  max-width: 250px;
+  border: 1px solid #f18c8e;
+  text-align:center;
+  margin: 20px 10px;
+  padding:20px 0;
+  overflow: hidden;
+}
+.pricing .pricing-sec .one h3,
+.pricing .pricing-sec .two h3,
+.pricing .pricing-sec .three h3,
+.pricing .pricing-sec .four h3{
+font-size: 2.5vmin;
+color:#f18c8e;
+font-weight: 800;
+padding: 15px 0;
+text-transform: uppercase;
+}
+.pricing .pricing-sec .one h1,
+.pricing .pricing-sec .two h1,
+.pricing .pricing-sec .three h1,
+.pricing .pricing-sec .four h1{
+  font-size: 4vmin;
+}
+.pricing .pricing-sec .one h2,
+.pricing .pricing-sec .two h2,
+.pricing .pricing-sec .three h2,
+.pricing .pricing-sec .four h2{
+  font-size: 3vmin;
+  padding: 5px 0;
+}
+.pricing .pricing-sec .one button,
+.pricing .pricing-sec .two button,
+.pricing .pricing-sec .three button,
+.pricing .pricing-sec .four button{
+  font-size: 3vmin;
+  padding: 10px 20px;
+  background-color:#f18c8e;
+  border:none;
+  border-radius: 25px;
+}
+.pricing .pricing-sec .one button:hover,
+.pricing .pricing-sec .two button:hover,
+.pricing .pricing-sec .three button:hover,
+.pricing .pricing-sec .four button:hover{
+  background-color:#56384c;
+  color:#fff;
+  padding: 15px 25px;
+  transition: 1s;
+}
