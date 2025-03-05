@@ -30,7 +30,7 @@ header .menu{
   justify-content: center;
   align-items: center;
 }
-header .menua{
+header .menu a{
   color: #000;
   font-size: 16px;
   font-weight: 600;
