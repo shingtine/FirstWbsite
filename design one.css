@@ -121,9 +121,9 @@ header .btn{
 
 .menus{
   width:100%;
-  height:160vjlh;
+  height:160vh;
   text-align:center ;
-  background-color:f9f9f9;
+  background-color:#f9f9f9;
 }
 .menus h1{
   font-size:2.6rem;
@@ -357,7 +357,7 @@ header{
 /*others element*/
 @media screen and (max-width:980px) {
   .content{
-    flex-wrap: wrap-reverse;
+    flex-wrap:wrap-reverse;
   }
   .content .text{
     width:100%;
